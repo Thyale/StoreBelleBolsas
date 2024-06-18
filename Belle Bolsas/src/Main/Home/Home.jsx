@@ -1,8 +1,11 @@
+import Apresentacao from "./Apresentacao";
+import Banner from "./Banner";
+
 export default function Home(){
     return(
         <div id="Home">
-            <p>HOME</p>
-            Aqui vao os outros componetnes
+            <Apresentacao/>
+            <Banner/>
         </div>
     )
 }

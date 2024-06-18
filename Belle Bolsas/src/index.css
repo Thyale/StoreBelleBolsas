@@ -127,6 +127,28 @@ header{
 
 /*Home*/
 
+/*Apresentação - parte 1*/
+
+.Apresentacao{
+  color: #EAD9C9;
+  width: 70vw;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.Apresentacao_Titulo{
+  font-size: 16px;
+}
+
+.Apresentacao_texto{
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+/*Banner - parte 2*/
+
 /*Carrinho*/
 
 #Carrinho{
