@@ -1,4 +1,6 @@
 import Swal from 'sweetalert2';
+import Header from '../../Header/Header';
+import { useState } from 'react';
 import BolsaDestaques1 from "../../img/BolsaDestaques1.png";
 import BolsaDestaques2 from "../../img/BolsaDestaques2.png";
 import BolsaDestaques3 from "../../img/BolsaDestaques3.png";
@@ -8,13 +10,24 @@ import BolsaDestaques6 from "../../img/BolsaDestaques6.png";
 
 export default function Destaques(){
 
+    const [carrinho, setCarrinho] = useState(false);
+
     function CompraFeita() {
+        setCarrinho(true);
+
         Swal.fire({
             icon: 'success',
             title: 'Bolsa adicionada ao carrinho!',
             showConfirmButton: false,
             timer: 1500,
         });
+
+        var carrinhoIcon = window.document.querySelector("span#CarrinhoIcon");
+        if (carrinhoIcon) {
+            carrinhoIcon.style.color = "green";
+        }else{
+            carrinhoIcon.style.color = "white";
+        }
     }
 
     return(
@@ -43,7 +56,7 @@ export default function Destaques(){
                     <img src={BolsaDestaques4}/>
                     <p>Bolsa Deluxe</p>
                     <p>R$ 99,99</p>
-                    <input type="button" onClick={CompraFeita} onClick={CompraFeita} value="Comprar" />
+                    <input type="button" onClick={CompraFeita} value="Comprar" />
                 </div>
                 <div>
                     <img src={BolsaDestaques5}/>

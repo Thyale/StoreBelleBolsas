@@ -35,7 +35,7 @@ export default function Header(){
 
             <div className="Header_Nav">
                 <span class="material-symbols-outlined" onClick={ShowLogin}>person</span>
-                <span class="material-symbols-outlined" onClick={ShowShop}>shopping_cart</span>
+                <span class="material-symbols-outlined" id="CarrinhoIcon" onClick={ShowShop}>shopping_cart</span>
             </div>
 
         </header>
