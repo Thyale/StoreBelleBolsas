@@ -330,6 +330,25 @@ header{
 
 #Carrinho{
   display: none;
+  padding: 1em;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  margin-top:3em;
+  height: 60vh;
+  color: #EAD9C9;
+  text-align: center;
+}
+
+.CarrinhoVazio input{
+  width: 270px;
+  outline: none;
+  border: none;
+  background-color: #B08B59;
+  color: #EAD9C9;
+  padding: 10px;
+  margin-top: 3em;
+  cursor: pointer;
 }
 
 
