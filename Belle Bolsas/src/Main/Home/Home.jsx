@@ -1,6 +1,8 @@
 import Apresentacao from "./Apresentacao";
+import Apresentacao2 from "./Apresentacao2";
 import Banner from "./Banner";
 import Destaques from "./Destaques";
+import Infos from "./Infos";
 
 export default function Home(){
     return(
@@ -8,6 +10,8 @@ export default function Home(){
             <Apresentacao/>
             <Banner/>
             <Destaques/>
+            <Apresentacao2/>
+            <Infos/>
         </div>
     )
 }
