@@ -1,6 +1,6 @@
 import Carrinho from "./Shopping/Carrinho";
 import Home from "./Home/Home";
-import Login from "./Login";
+import Login from "./Login/Login";
 
 export default function Corpo(){
     return(

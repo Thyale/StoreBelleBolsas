@@ -12,32 +12,32 @@ export default function Destaques(){
             <div className="DivGeralDestaques">
                 <div>
                     <img src={BolsaDestaques1}/>
-                    <p>Nome da bolsa</p>
+                    <p>BolsaFashion</p>
                     <p>R$ 189,99</p>
                 </div>
                 <div>
                     <img src={BolsaDestaques2}/>
-                    <p>Nome da bolsa</p>
+                    <p>Bolsa Versátil</p>
                     <p>R$ 148,99</p>
                 </div>
                 <div>
                     <img src={BolsaDestaques3}/>
-                    <p>Nome da bolsa</p>
+                    <p>Bolsa Transverssal</p>
                     <p>R$ 109,99</p>
                 </div>
                 <div>
                     <img src={BolsaDestaques4}/>
-                    <p>Nome da bolsa</p>
+                    <p>Bolsa Deluxe</p>
                     <p>R$ 99,99</p>
                 </div>
                 <div>
                     <img src={BolsaDestaques5}/>
-                    <p>Nome da bolsa</p>
+                    <p>Bolsa Verão</p>
                     <p>R$ 67,99</p>
                 </div>
                 <div>
                     <img src={BolsaDestaques6}/>
-                    <p>Nome da bolsa</p>
+                    <p>Bolsa Stillus</p>
                     <p>R$ 126,99</p>
                 </div>
             </div>

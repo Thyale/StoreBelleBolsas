@@ -57,6 +57,7 @@ header{
   max-width: 500px;
   margin: auto;
   margin-top:3em;
+  height: 60vh;
 }
 
 #Login h1{
@@ -101,7 +102,6 @@ header{
 
 .Login_Loginbtn{
   margin-top: 10px;
-  background-color: aqua;
 }
 
 .Login_Loginbtn input{
@@ -132,7 +132,7 @@ header{
 
 .Apresentacao{
   color: #EAD9C9;
-  width: 70vw;
+  width: 90vw;
   max-width: 600px;
   text-align: center;
   margin: auto;
@@ -197,6 +197,7 @@ header{
   font-size: 15px;
   color: #EAD9C9;
   cursor: pointer;
+  gap: 10px;
 }
 
 .DivGeralDestaques img{
@@ -213,7 +214,7 @@ header{
 
 .Apresentacao2{
   color: #EAD9C9;
-  width: 70vw;
+  width: 90vw;
   max-width: 600px;
   text-align: center;
   margin: auto;
@@ -268,11 +269,53 @@ header{
   font-weight: 100;
 }
 
+/*Footer*/
+
+.Footer{
+  background-color: #333;
+  padding: 40px 20px;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Footer i{
+  cursor: pointer;
+}
+
+.Footer_email{
+  color: #EAD9C9;
+  border: 1px solid #EAD9C9;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.Footer_emailbtn{
+  background-color: #333;
+  border: none;
+  outline: none;
+  color: #EAD9C9;
+  width: 210px;
+}
+
+.Footer_emailEnvio{
+  background-color: #333;
+  border: none;
+  outline: none;
+  color: #EAD9C9;
+  cursor: pointer;
+}
+
 /*Carrinho*/
 
 #Carrinho{
   display: none;
 }
+
 
 @media (max-width:678px){
 
