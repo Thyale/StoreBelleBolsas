@@ -203,11 +203,27 @@ header{
 .DivGeralDestaques img{
   width: 250px;
   border-radius: 4px;
+  position: relative;
 }
+
 
 .DivGeralDestaques img:hover{
   transform: translate(-3px, -3px);
   transition: transform 1s;
+}
+
+.DivGeralDestaques input{
+  width: 100%;
+  background-color: #B08B59;
+  color: #EAD9C9;
+  border: none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.DivGeralDestaques input:hover{
+  background-color: #997749;
 }
 
 /*Apresentação2 - parte 4*/
