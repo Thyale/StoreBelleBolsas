@@ -11,6 +11,7 @@ html{
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #78866B;
+  overflow-x: hidden;
 }
 
 /*Header*/
@@ -149,10 +150,39 @@ header{
 
 /*Banner - parte 2*/
 
+.swiper {
+  width: 90vw;
+  margin-top: 3em;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannerCELL{
+  display: none;
+}
+
 /*Carrinho*/
 
 #Carrinho{
   display: none;
 }
 
+@media (max-width:678px){
+
+  /*Banner - parte 2*/
+
+  .bannerPC{
+    display: none;
+  }
+
+  .bannerCELL{
+    display: block;
+  }
+
+}
 
