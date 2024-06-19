@@ -200,16 +200,22 @@ header{
   gap: 10px;
 }
 
-.DivGeralDestaques img{
+.DivImagens {
   width: 250px;
-  border-radius: 4px;
+  height: 250px;
   position: relative;
 }
 
+.DivImagens img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+  transition: opacity 0.5s ease;
+}
 
-.DivGeralDestaques img:hover{
-  transform: translate(-3px, -3px);
-  transition: transform 1s;
+.imagem1:hover{
+  opacity: 0;
 }
 
 .DivGeralDestaques input{
