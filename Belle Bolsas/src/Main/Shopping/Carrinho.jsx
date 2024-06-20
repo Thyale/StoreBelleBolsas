@@ -12,14 +12,16 @@ import BolsaDestaques6 from "../../img/BolsaDestaques6.png";
 
 export default function Carrinho(){
     
+    {/* Voltando para o home e fechando o carrinho*/}
     function ShowHome(){
         var Login = window.document.querySelector("div#Login").style.display = "none"
         var Home = window.document.querySelector("div#Home").style.display = "block"
         var Carrinho = window.document.querySelector("div#Carrinho").style.display = "none"
     }
 
+    {/* Quando clicamos em "remover" o produto será excluido do carrinho e sua quantidade volta para 1 quando adicionado novamente */}
     const RemoverProduto = (num) => {
-        if (num === 1) {
+        if (num === 1 ) {
             document.querySelector("div.produto1").style.display = "none";
             setQuantidade1(1)
         } else if (num === 2) {
@@ -40,6 +42,7 @@ export default function Carrinho(){
         }
     };
 
+    {/* constantes para controle de quantidade de cada item, inicia com 1 quando colocamos no carrinho */}
     const [quantidade1,setQuantidade1] = useState(1)
     const [quantidade2,setQuantidade2] = useState(1)
     const [quantidade3,setQuantidade3] = useState(1)
@@ -48,6 +51,7 @@ export default function Carrinho(){
     const [quantidade6,setQuantidade6] = useState(1)
     
 
+    {/* adicionando (+1)a quantidade que queremos de cada item */}
     const AdionarMais = (quant) =>{
         if(quant == 1){
             setQuantidade1(quantidade1 + 1)
@@ -64,6 +68,7 @@ export default function Carrinho(){
         }
     }
 
+    {/* removendo (-1) da quantidade que queremos de cada item */}
     const Remover = (remov) =>{
         if(remov == 1){
             setQuantidade1(quantidade1 - 1)
@@ -80,10 +85,31 @@ export default function Carrinho(){
         }
     }
 
+    {/* Declarando que se a quantidade for menor que 1 o produto será automaticamente removido do carrinho e a quantidade do produto zerada para 1 novamente, sem ter que clicar em remover */}
+    if(quantidade1< 1){
+        document.querySelector("div.produto1").style.display = "none";
+        setQuantidade1(1)
+    }else if(quantidade2< 1){
+        document.querySelector("div.produto2").style.display = "none";
+        setQuantidade2(1)
+    }else if(quantidade3 < 1){
+        document.querySelector("div.produto3").style.display = "none";
+        setQuantidade3(1)
+    }else if(quantidade4 < 1){
+        document.querySelector("div.produto4").style.display = "none";
+        setQuantidade4(1)
+    }else if(quantidade5< 1 ){
+        document.querySelector("div.produto5").style.display = "none";
+        setQuantidade5(1)
+    }else if(quantidade6< 1 ){
+        document.querySelector("div.produto6").style.display = "none";
+        setQuantidade6(1)
+    }
+
 
     return(
         <div id="Carrinho">
-
+            {/* Aqui temos a div geral que estão todos os produtos que vai aparecer no carrinho */}
             <div className="CarrinhoProdutos">
 
                 <div className="produto1" id="Produtos">
@@ -184,6 +210,7 @@ export default function Carrinho(){
 
             </div>
 
+            {/* Aqui temos a aréa de finalização do carrinho */}
             <div className="CarrinhoFinalizacao">
                 <p className='CarrinhoValor'>Valor total: <strong>R$00,00</strong></p>
                 <p className='endercoentrega'>Endereço de entrega:</p>
@@ -192,6 +219,7 @@ export default function Carrinho(){
                 <input className='btnfinalizar' type="button" value="Finalizar compra" />
             </div>
 
+            {/* Aqui temos o botão que volta para o home */}
             <input onClick={ShowHome} className='btnComprar' type="button" value="Continuar comprando!" />
         </div>
     )
