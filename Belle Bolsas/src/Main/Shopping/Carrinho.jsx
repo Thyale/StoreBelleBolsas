@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from "react";
+import Swal from 'sweetalert2';
 import Login from "../Login/Login"
 import Home from "../Home/Home"
 
@@ -105,6 +106,33 @@ export default function Carrinho(){
         document.querySelector("div.produto6").style.display = "none";
         setQuantidade6(1)
     }
+
+    {/* Função Verificar se o cliente colocou o endereço no campo */}
+    const [endereco,setEndereco] = useState("")
+    function Endereco(x){
+        setEndereco(x.target.value)
+    }
+
+    {/* Função para finalizar a compra */}
+    function FinalizarCompra(){
+       if(endereco == ""){
+        Swal.fire({
+            icon: 'error',
+            title: 'Informe seu endereço antes de finalizar a compra!',
+            showConfirmButton: false,
+            timer: 1500,
+        });
+       }else{
+        Swal.fire({
+            icon: 'success',
+            title: 'Pedido realizado com sucesso!',
+            showConfirmButton: false,
+            timer: 1500,
+        });
+       }
+
+    }
+
 
 
     return(
@@ -214,9 +242,9 @@ export default function Carrinho(){
             <div className="CarrinhoFinalizacao">
                 <p className='CarrinhoValor'>Valor total: <strong>R$00,00</strong></p>
                 <p className='endercoentrega'>Endereço de entrega:</p>
-                <input className='btnendereco' type="text" name="enderecco" id="enderecco" placeholder='Endereço Completo' autoComplete='off'/>
+                <input onChange={Endereco} className='btnendereco' type="text" name="enderecco" id="enderecco" placeholder='Endereço Completo' autoComplete='off'/>
                 <p className='obs'>Obs: Adicione produtos antes de acessar essa área.</p>
-                <input className='btnfinalizar' type="button" value="Finalizar compra" />
+                <input onClick={FinalizarCompra} className='btnfinalizar' type="button" value="Finalizar compra" />
             </div>
 
             {/* Aqui temos o botão que volta para o home */}
