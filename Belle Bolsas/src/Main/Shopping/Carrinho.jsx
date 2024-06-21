@@ -25,8 +25,6 @@ export default function Carrinho(){
     const [valorBolsa5, setValorBolsa5] = useState(67.99);
     const [valorBolsa6, setValorBolsa6] = useState(126.99);
     
-    // Estado para o valor total do carrinho
-    const [valorTotal, setValorTotal] = useState(0);
     
     {/* Voltando para o home e fechando o carrinho*/}
     function ShowHome(){
@@ -269,7 +267,6 @@ export default function Carrinho(){
 
             {/* Aqui temos a aréa de finalização do carrinho */}
             <div className="CarrinhoFinalizacao">
-                <p className='CarrinhoValor'>Valor total: <strong>R${valorTotal}</strong></p>
                 <p className='endercoentrega'>Endereço de entrega:</p>
                 <input onChange={Endereco} className='btnendereco' type="text" name="enderecco" id="enderecco" placeholder='Endereço Completo' autoComplete='off'/>
                 <p className='obs'>Obs: Adicione produtos antes de acessar essa área.</p>
