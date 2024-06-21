@@ -448,14 +448,16 @@ header{
 }
 
 .QuantidadeProdutoRemover{
-  border: 1px solid #EAD9C9;
+  border: 1px solid #ead9c96a;
   padding: 1px 9px;
   border-radius: 50%;
   cursor: pointer;
+  background-color: #6a765e;
 }
 
 .QuantidadeProdutoAdicionar{
-  border: 1px solid #EAD9C9;
+  border: 1px solid #ead9c96a;
+  background-color: #6a765e;
   padding: 1px 7px;
   border-radius: 50%;
   cursor: pointer;
