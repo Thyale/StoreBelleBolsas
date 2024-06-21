@@ -8,4 +8,4 @@ Este projeto React foi desenvolvido utilizando Vite. Para explorar o código-fon
 1. Clone o repositório do GitHub clicando em "Code" no repositório e abra-o usando o GitHub Desktop.
 2. Navegue até a pasta do projeto clonado em seu ambiente de trabalho.
 3. Execute o comando 'npm install' dentro desta pasta para instalar todas as dependências necessárias.
-4. Finalmente, inicie o servidor de desenvolvimento local com o comando 'npm run dev'. Isso abrirá o projeto em um servidor local, geralmente acessível em http://localhost:5173.
+4. Finalmente, inicie o servidor de desenvolvimento local com o comando 'npm run dev'. Isso abrirá o projeto em um servidor local, geralmente acessível em '//localhost:5173'.
