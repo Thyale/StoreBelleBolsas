@@ -65,62 +65,50 @@ export default function Carrinho(){
     };
 
     {/* adicionando (+1) a quantidade que queremos de cada item e aumentando o valor de forma proporcional*/}
-    const AdionarMais = (quant) => {
-        if (quant == 1) {
-          setQuantidade1(quantidade1 + 1);
-          setValorBolsa1(valorBolsa1 + 189.99);
-          setValorTotal(valorTotal + 189.99);
-        } else if (quant == 2) {
-          setQuantidade2(quantidade2 + 1);
-          setValorBolsa2(valorBolsa2 + 148.99);
-          setValorTotal(valorTotal + 148.99);
-        } else if (quant == 3) {
-          setQuantidade3(quantidade3 + 1);
-          setValorBolsa3(valorBolsa3 + 109.99);
-          setValorTotal(valorTotal + 109.99);
-        } else if (quant == 4) {
-          setQuantidade4(quantidade4 + 1);
-          setValorBolsa4(valorBolsa4 + 99.99);
-          setValorTotal(valorTotal + 99.99);
-        } else if (quant == 5) {
-          setQuantidade5(quantidade5 + 1);
-          setValorBolsa5(valorBolsa5 + 67.99);
-          setValorTotal(valorTotal + 67.99);
-        } else if (quant == 6) {
-          setQuantidade6(quantidade6 + 1);
-          setValorBolsa6(valorBolsa6 + 126.99);
-          setValorTotal(valorTotal + 126.99);
+    const AdionarMais = (quant) =>{
+        if(quant == 1){
+            setQuantidade1(quantidade1 + 1)
+            setValorBolsa1(valorBolsa1 + 189.99)
+        }else if(quant == 2){
+            setQuantidade2(quantidade2 + 1)
+            setValorBolsa2(valorBolsa2 + 148.99)
+        }else if(quant == 3){
+            setQuantidade3(quantidade3 + 1)
+            setValorBolsa3(valorBolsa3 + 109.99)
+        }else if(quant == 4){
+            setQuantidade4(quantidade4 + 1)
+            setValorBolsa4(valorBolsa4 + 99.99)
+        }else if(quant == 5){
+            setQuantidade5(quantidade5 + 1)
+            setValorBolsa5(valorBolsa5 + 67.99)
+        }else if(quant == 6){
+            setQuantidade6(quantidade6 + 1)
+            setValorBolsa6(valorBolsa6 + 126.99)
         }
-    };
+    }
 
     {/* removendo (-1) da quantidade que queremos de cada item  e diminuindo o valor da bolsa de acordo com a quantidade*/}
-    const Remover = (remov) => {
-        if (remov == 1) {
-          setQuantidade1(quantidade1 - 1);
-          setValorBolsa1(valorBolsa1 - 189.99);
-          setValorTotal(valorTotal - 189.99);
-        } else if (remov == 2) {
-          setQuantidade2(quantidade2 - 1);
-          setValorBolsa2(valorBolsa2 - 148.99);
-          setValorTotal(valorTotal - 148.99);
-        } else if (remov == 3) {
-          setQuantidade3(quantidade3 - 1);
-          setValorBolsa3(valorBolsa3 - 109.99);
-          setValorTotal(valorTotal - 109.99);
-        } else if (remov == 4) {
-          setQuantidade4(quantidade4 - 1);
-          setValorBolsa4(valorBolsa4 - 99.99);
-          setValorTotal(valorTotal - 99.99);
-        } else if (remov == 5) {
-          setQuantidade5(quantidade5 - 1);
-          setValorBolsa5(valorBolsa5 - 67.99);
-          setValorTotal(valorTotal - 67.99);
-        } else if (remov == 6) {
-          setQuantidade6(quantidade6 - 1);
-          setValorBolsa6(valorBolsa6 - 126.99);
-          setValorTotal(valorTotal - 126.99);
+    const Remover = (remov) =>{
+        if(remov == 1){
+            setQuantidade1(quantidade1 - 1)
+            setValorBolsa1(valorBolsa1 - 189.99)
+        }else if(remov == 2){
+            setQuantidade2(quantidade2 - 1)
+            setValorBolsa2(valorBolsa2 - 148.99)
+        }else if(remov == 3){
+            setQuantidade3(quantidade3 - 1)
+            setValorBolsa3(valorBolsa3 - 109.99)
+        }else if(remov == 4){
+            setQuantidade4(quantidade4 - 1)
+            setValorBolsa4(valorBolsa4 - 99.99)
+        }else if(remov == 5){
+            setQuantidade5(quantidade5 - 1)
+            setValorBolsa5(valorBolsa5 - 67.99)
+        }else if(remov == 6){
+            setQuantidade6(quantidade6 - 1)
+            setValorBolsa6(valorBolsa6 - 126.99)
         }
-      };
+    }
 
     {/* Declarando que se a quantidade for menor que 1 o produto será automaticamente removido do carrinho, o valor volta ao valor inicial e a quantidade do produto zerada para 1 novamente, sem ter que clicar em remover */}
     if(quantidade1< 1){
