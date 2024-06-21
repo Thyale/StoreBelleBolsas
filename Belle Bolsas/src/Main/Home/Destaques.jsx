@@ -1,6 +1,4 @@
 import Swal from 'sweetalert2';
-import Header from '../../Header/Header';
-import { useState } from 'react';
 import BolsaDestaques1 from "../../img/BolsaDestaques1.png";
 import BolsaDestaques2 from "../../img/BolsaDestaques2.png";
 import BolsaDestaques3 from "../../img/BolsaDestaques3.png";
@@ -13,7 +11,6 @@ import BolsaN3 from "../../img/BolsaN3.png";
 import BolsaN4 from "../../img/BolsaN4.png";
 import BolsaN5 from "../../img/BolsaN5.png";
 import BolsaN6 from "../../img/BolsaN6.png";
-import Carrinho from '../Shopping/Carrinho';
 
 export default function Destaques(){
 
